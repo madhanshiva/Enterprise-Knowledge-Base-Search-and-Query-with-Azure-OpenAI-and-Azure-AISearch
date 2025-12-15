@@ -20,7 +20,7 @@ In this exercise, you will complete the following tasks:
 
 In this task, you will begin by deploying an Azure OpenAI resource through the Azure portal. This involves creating an OpenAI resource, configuring it with the appropriate settings, and deploying models such as **gpt-4.1** and **text-embedding-3-small** using Azure AI Foundry portal.
 
-Azure OpenAI offers a web-based portal called **Azure AI Foundry portal** for deploying, managing, and exploring models. Follow these steps to deploy a model using Azure AI Foundry portal:
+Azure OpenAI offers a web-based portal called **Microsoft Foundry portal** for deploying, managing, and exploring models. Follow these steps to deploy a model using Microsoft Foundry portal:
 
 ### Deploy Azure OpenAI Resource
 
@@ -260,7 +260,7 @@ In this task, you will deploy Azure Functions that automate the document process
 
     ![](./media/am14.png)
 
-1. Paste the template you copied in step 2, in the ARM template editor, locate the **OpenAIEngine** parameter and set the **defaultValue** **(line no: 97)** to `gpt-4.1` **(1)**. Also verify that **OpenAIDeploymentType** **(line no: 104)is set to `Chat` **(2)**.
+1. Paste the template you copied in step 2, in the ARM template editor, locate the **OpenAIEngine** parameter and set the **defaultValue** **(line no: 97)** to `gpt-4.1` **(1)**. Also verify that **OpenAIDeploymentType** **(line no: 104)** is set to `Chat` **(2)**.
 
      ![](./media/l12-12-03.png)
 
