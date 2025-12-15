@@ -108,13 +108,13 @@ Azure OpenAI offers a web-based portal called **Azure AI Foundry portal** for de
 
     ![](./media/aifoundry2upd.png)
 
-1. On the **Select a model** page, search for **text-embedding-3-small (1)**, select **text-embedding-3-small (2)**, and click **Confirm (3)**.
+1. On the **Select a model** page, search for **text-embedding-ada-002 (1)**, select **text-embedding-ada-002 (2)**, and click **Confirm (3)**.
 
-    ![](./media/l1-12-3.png)   
+    ![](./media/l12-12-05.png)   
 
 1. In the Deploy model pop-up, enter the following details and click on the **Deploy (4)** button.
 
-    - Deployment name: **text-embedding-3-small**
+    - Deployment name: **text-embedding-ada-002**
 
     - Deployment type: **Standard (1)**
 
@@ -124,9 +124,9 @@ Azure OpenAI offers a web-based portal called **Azure AI Foundry portal** for de
     
     - Tokens per Minute Rate Limit (thousands): **40K (3)**
 
-      ![](./media/l1-12-4.png)  
+      ![](./media/l12-12-06.png)  
 
-      >**Note:** Copy the deployment name **text-embedding-3-small** and save it in Notepad. You will use it later in the lab.
+      >**Note:** Copy the deployment name **text-embedding-ada-002** and save it in Notepad. You will use it later in the lab.
 
 ## Task 2: Create Azure AI Search Resources
 
