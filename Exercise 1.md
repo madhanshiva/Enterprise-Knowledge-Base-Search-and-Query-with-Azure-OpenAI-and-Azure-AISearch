@@ -18,7 +18,7 @@ In this exercise, you will complete the following tasks:
 
 ## Task 1: Deploy Azure OpenAI and Models
 
-In this task, you will begin by deploying an Azure OpenAI resource through the Azure portal. This involves creating an OpenAI resource, configuring it with the appropriate settings, and deploying models such as **gpt-35-turbo-instruct** and **text-embedding-ada-002** using Azure AI Foundry portal.
+In this task, you will begin by deploying an Azure OpenAI resource through the Azure portal. This involves creating an OpenAI resource, configuring it with the appropriate settings, and deploying models such as **gpt-4.1** and **text-embedding-3-small** using Azure AI Foundry portal.
 
 Azure OpenAI offers a web-based portal called **Azure AI Foundry portal** for deploying, managing, and exploring models. Follow these steps to deploy a model using Azure AI Foundry portal:
 
@@ -28,9 +28,9 @@ Azure OpenAI offers a web-based portal called **Azure AI Foundry portal** for de
 
     ![](./media/openai1upd.png)
 
-1. On the **AI Foundry | Azure OpenAI blade**, in the left pane under **Use with AI Foundry**, select **Azure OpenAI (1)**. Then click **+ Create (2)**, and from the dropdown, choose **Azure OpenAI (3)**.
+1. On the **Microsoft Foundry | Azure OpenAI blade**, in the left pane under **Use with AI Foundry**, select **Azure OpenAI (1)**. Then click **+ Create (2)**, and from the dropdown, choose **Azure OpenAI (3)**.
 
-    ![](./media/am2.png)
+    ![](./media/l12-12-01.png)
 
 1. On the **Basics** tab of **Create Azure OpenAI** resource page, enter the following details and click on **Next (6)** button.
    
@@ -82,23 +82,25 @@ Azure OpenAI offers a web-based portal called **Azure AI Foundry portal** for de
 
     ![](./media/ee5.png)
 
-1. On the Select a model page, search for **gpt-35-turbo-instruct (1)**, select **gpt-35-turbo-instruct (2)**, and click **Confirm (3)**.
+1. On the Select a model page, search for **gpt-4.1 (1)**, select **gpt-4.1 (2)**, and click **Confirm (3)**.
 
-    ![](./media/aifoundry3upd.png)    
+    ![](./media/l1-12-1.png)    
 
-1. In the Deploy model pop-up, enter the following details and click on the **Deploy (5)** button.
+1. In the Deploy model pop-up, enter the following details and click on the **Deploy (4)** button.
     
-    - Deployment name: **gpt-35-turbo-instruct (1)**
+    - Deployment name: **gpt-4.1**
 
-    - Deployment type: **Standard (2)**
+    - Deployment type: **Standard (1)**
 
     - Click on **Customize** to expand the menu.
     
-    - Model version: **0914 (Default) (3)**
+    - Model version: **2025-04-14 (Default) (2)**
 
-    - Tokens per Minute Rate Limit (thousands): **40K  (4)**
+    - Tokens per Minute Rate Limit (thousands): **40K  (3)**
 
-      ![](./media/aifoundry4upd.png)
+      ![](./media/l1-12-2.png) 
+
+      >**Note:** Copy the deployment name **gpt-4.1** and save it in Notepad. Will use it later in the lab.
 
 1. Repeat the process to create another deployment.
 
@@ -106,23 +108,25 @@ Azure OpenAI offers a web-based portal called **Azure AI Foundry portal** for de
 
     ![](./media/aifoundry2upd.png)
 
-1. On the **Select a model** page, search for **text-embedding-ada-002 (1)**, select **text-embedding-ada-002 (2)**, and click **Confirm (3)**.
+1. On the **Select a model** page, search for **text-embedding-3-small (1)**, select **text-embedding-3-small (2)**, and click **Confirm (3)**.
 
-    ![](./media/aifoundry5.png)  
+    ![](./media/l1-12-3.png)   
 
-1. In the Deploy model pop-up, enter the following details and click on the **Deploy (5)** button.
+1. In the Deploy model pop-up, enter the following details and click on the **Deploy (4)** button.
 
-    - Deployment name: **text-embedding-ada-002 (1)**
+    - Deployment name: **text-embedding-3-small**
 
-    - Deployment type: **Standard (2)**
+    - Deployment type: **Standard (1)**
 
     - Click on **Customize** to expand the menu.
 
-    - Model version: **2 (Default) (3)**
+    - Model version: **1 (Default) (2)**
     
-    - Tokens per Minute Rate Limit (thousands): **40K (4)**
+    - Tokens per Minute Rate Limit (thousands): **40K (3)**
 
-      ![](./media/aifoundry6.png)
+      ![](./media/l1-12-4.png)  
+
+      >**Note:** Copy the deployment name **text-embedding-3-small** and save it in Notepad. You will use it later in the lab.
 
 ## Task 2: Create Azure AI Search Resources
 
@@ -134,9 +138,9 @@ In this task, you will create the required Azure resources for AI Search, Docume
 
     ![](./media/am5.png)
 
-1. On the **AI Foundry | AI Search** blade, click on **+ Create**.
+1. On the **Microsoft Foundry | AI Search** blade, click on **+ Create**.
 
-    ![](./media/aisearch.png)
+    ![](./media/l1-12-5.png)
 
 1. On the **Basics** tab of **Create a search service** resource page, enter the following details:
    
@@ -154,6 +158,8 @@ In this task, you will create the required Azure resources for AI Search, Docume
 
       ![](./media/am6.png)
 
+      >**Note:** if you are not able to deploy resource in **East US** kindly select **East US 2** and deploy.
+
 1. Review the configuration, and click on **Create** button.
 
      ![](./media/am25.png)
@@ -170,9 +176,9 @@ In this task, you will create the required Azure resources for AI Search, Docume
 
     ![](./media/am7.png)
 
-1. On the **AI Foundry | Document intelligence** blade, click on **+ Create**.
+1. On the **Microsoft Foundry | Document intelligence** blade, click on **+ Create**.
 
-    ![](./media/documentint.png)
+    ![](./media/l12-12-02.png)
 
 1. On the **Basics** tab of **Create Document Intelligence** resource page, enter the following details:
    
@@ -204,9 +210,9 @@ In this task, you will create the required Azure resources for AI Search, Docume
 
     ![](./media/am9.png)
 
-1. On the **AI Foundry | Translator** blade, click on **+ Create**.
+1. On the **Microsoft Foundry | Translator** blade, click on **+ Create**.
 
-    ![](./media/translator.png)
+    ![](./media/l1-12-6.png)
 
 1. On the **Basics** tab of **Create Translator** resource page, enter the following details:
    
@@ -254,7 +260,15 @@ In this task, you will deploy Azure Functions that automate the document process
 
     ![](./media/am14.png)
 
-1. Paste the template you copied in step 2 and click on the **Save** button.
+1. Paste the template you copied in step 2, in the ARM template editor, locate the **OpenAIEngine** parameter and set the **defaultValue** **(line no: 97)** to `gpt-4.1` **(1)**. Also verify that **OpenAIDeploymentType** **(line no: 104)is set to `Chat` **(2)**.
+
+     ![](./media/l12-12-03.png)
+
+1. Scroll down to the embeddings section and ensure both **OpenAIEmbeddingsEngineDoc** **(1)** and **OpenAIEmbeddingsEngineQuery** **(2)** have the **defaultValue** **(line no: 111 and 118)**set to `text-embedding-3-small`.
+
+     ![](./media/l12-12-04.png)
+
+1. Click on the **Save** button.
 
     ![](./media/24-07-2024(33).png)
 
