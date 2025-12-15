@@ -264,9 +264,9 @@ In this task, you will deploy Azure Functions that automate the document process
 
      ![](./media/l12-12-03.png)
 
-1. Scroll down to the embeddings section and ensure both **OpenAIEmbeddingsEngineDoc** **(1)** and **OpenAIEmbeddingsEngineQuery** **(2)** have the **defaultValue** **(line no: 111 and 118)**set to `text-embedding-3-small`.
+1. Scroll down to the embeddings section and ensure both **OpenAIEmbeddingsEngineDoc** **(1)** and **OpenAIEmbeddingsEngineQuery** **(2)** have the **defaultValue** **(line no: 111 and 118)** set to `l12-12-07`.
 
-     ![](./media/l12-12-04.png)
+     ![](./media/l12-12-07.png)
 
 1. Click on the **Save** button.
 
